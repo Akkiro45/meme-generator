@@ -1,0 +1,11 @@
+<div class="container">
+  <img [src]="meme.meme" [alt]="meme.id" class="img" >
+  <div class="controls" >
+    <div class="button" (click)="onLikeClick()" >
+      <fa-icon [icon]="heartIcon"></fa-icon>
+    </div>
+    <div class="button" (click)="onBookmarkClick()" >
+      <fa-icon [icon]="bookmarkIcon"></fa-icon>
+    </div>
+  </div>
+</div>

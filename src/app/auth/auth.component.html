@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>Signup</h3>
+  <br>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" >
+    <div *ngIf="form.controls.email.errors" >Please enter valid email id</div>
+    <input type="email" formControlName="email" placeholder="Email id" />
+    <br>
+    <div *ngIf="form.controls.password.errors" >Please enter password</div>
+    <input type="password" formControlName="password" placeholder="Password" />
+    <br>
+    <button type="submit" [disabled]="form.invalid">
+      Signup
+    </button>
+  </form>
+</div>

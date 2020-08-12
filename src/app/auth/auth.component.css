@@ -1,0 +1,11 @@
+.container {
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}

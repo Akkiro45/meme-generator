@@ -1,0 +1,32 @@
+<div class="root" >
+  <input type="file" (change)='onImgSelect.emit($event)' />
+  <div class="tab" >
+    <div class="tab-button" 
+      [ngClass]="{ 'active-tab': topTextControls }" 
+      (click)="onChangeTab()" >Top Text</div>
+    <div class="tab-button" 
+      [ngClass]="{ 'active-tab': !topTextControls }" 
+      (click)="onChangeTab()" >Bottom Text</div>
+  </div>
+  <div class="controls" >
+    <input class="field" type="text" placeholder="Text" [(ngModel)]="currProp.text" >
+    <input class="field" type="number" placeholder="Font size" [(ngModel)]="currProp.fontSize" max="50" min="0" />
+    <select class="field" [(ngModel)]="currProp.fontStyle" >
+      <option value="bold" >Bold</option>
+      <option value="italic" >Italic</option>
+    </select>
+    <select class="field" [(ngModel)]="currProp.fontFamily" >
+      <option value="Times New Roman" >Times New Roman</option>
+      <option value="Arial">Arial</option>
+      <option value="Courier New" >Courier New</option>
+    </select>
+    <div class="field" >
+      <p>Font color </p>
+      <input type="color" [(ngModel)]="currProp.color" >
+    </div>
+    <div class="field" >
+      <p>Background color </p>
+      <input type="color" [(ngModel)]="background.color" >
+    </div>
+  </div>
+</div>

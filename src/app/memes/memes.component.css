@@ -1,0 +1,10 @@
+.meme-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.msg {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 100px;
+}

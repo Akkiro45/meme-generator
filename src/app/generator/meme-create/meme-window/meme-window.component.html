@@ -1,0 +1,30 @@
+<div class="outer-container">
+  <div class="root" > 
+    <div #window
+      [ngStyle]="{backgroundColor: background.color}"
+    >
+      <div class="topText" 
+        [ngStyle]="{
+          color: topTextProp.color,
+          fontSize: topTextProp.fontSize + 'px',
+          fontWeight: topTextProp.fontStyle === 'bold' ? 'bold' : 100,
+          fontFamily: topTextProp.fontFamily,
+          fontStyle: topTextProp.fontStyle === 'italic' ? 'italic' : 'normal'
+        }"
+      >{{ topTextProp.text }}</div>
+      <div class="img" >
+        <img class="img" [src]="image" alt="img">
+      </div>
+      <div class="bottomText"
+        [ngStyle]="{
+          color: bottomTextProp.color,
+          fontSize: bottomTextProp.fontSize + 'px',
+          fontWeight: bottomTextProp.fontStyle === 'bold' ? 'bold' : 100,
+          fontFamily: bottomTextProp.fontFamily,
+          fontStyle: bottomTextProp.fontStyle === 'italic' ? 'italic' : 'normal'
+        }"
+      >{{ bottomTextProp.text }}</div>
+    </div>
+  </div>
+  <div class="button" (click)="onPost()" >Post</div>
+</div>

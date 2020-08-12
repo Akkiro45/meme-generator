@@ -1,0 +1,32 @@
+.root {
+  width: 350px;
+  height: 100%;
+  padding: 7px;
+  border-right: 1px solid #c1c1c1;
+}
+.tab {
+  display: flex;
+  border-bottom: 1px solid #c1c1c1;
+  margin-top: 20px;
+}
+.tab-button {
+  width: 50%;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.active-tab {
+  background-color: indianred;
+  color: #ffffff;
+}
+.field {
+  height: 28px;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+}
+p {
+  margin-right: 10px;
+}

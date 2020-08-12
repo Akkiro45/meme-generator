@@ -1,0 +1,15 @@
+<div class="root" >
+  <app-controls
+    [topTextProp]="topTextProp"
+    [bottomTextProp]="bottomTextProp"
+    [background]="background"
+    (onImgSelect)="onImgSelect($event)"
+    ></app-controls>
+  <app-meme-window
+    [topTextProp]="topTextProp"
+    [bottomTextProp]="bottomTextProp"
+    [background]="background"
+    [image]="image"
+    (clearControls)="clearControls()"
+  ></app-meme-window>
+</div>
